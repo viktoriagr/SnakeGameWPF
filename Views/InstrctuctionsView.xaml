@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="WpfSnakeGameVGr.Views.InstrctuctionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfSnakeGameVGr.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="660">
+    <Grid Margin="10">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/bckg.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center"
+                   FontFamily="Open Sans" FontSize="16"
+                   FontWeight="Bold"
+                   Text="Game Rules"
+                   TextAlignment="Center"
+                   VerticalAlignment="Top"
+                   Foreground="#FF1C1C1C"
+                   Margin="0,100,0,0"/>
+        <TextBlock x:Name="txtInstructions" Grid.Row="0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   FontFamily="Open Sans" FontSize="14"
+                   Text="The rules of the game are easy - a sole player attempts to eat items by running into them with the head of the snake. Each item eaten makes the snake longer, so controlling becomes progressively more difficult. To manage the direction of the snake, you must use the arrow keys of your keyboard."
+                   TextAlignment="Center" Foreground="#FF1C1C1C" Width="500"/>
+        <Button x:Name="btnGoBack" Width="100" Height="25" Content="Back" Click="GoBackClick" VerticalAlignment="Bottom" Margin="0,0,0,100"/>
+    </Grid>
+</UserControl>

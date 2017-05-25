@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="WpfSnakeGameVGr.Views.StartView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfSnakeGameVGr.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="440" d:DesignWidth="660">
+    <Grid Margin="10">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/bckg.jpg"/>
+        </Grid.Background>
+        <TextBlock FontFamily="Open Sans" FontSize="22"
+                   FontWeight="Bold"
+                   Text="The Snake"
+                   TextAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="#FF1C1C1C"
+                   Margin="0,0,0,120"
+                   Height="25"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="New Game" Click="NewGameClick" Height="30" Width="155" Margin="0,0,0,10"/>
+            <Button Content="Instructions" Click="InstructionsClick" Height="30"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
